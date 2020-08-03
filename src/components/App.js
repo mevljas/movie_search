@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import "./App.css";
+import React, { useReducer, useEffect } from "react";
+import "../App.css";
 import Header from "./Header";
 import Movie from "./Movie";
 import Search from "./Search";
@@ -11,6 +11,8 @@ const initialState = {
   movies: [],
   errorMessage: null,
 };
+
+const [state, dispatch] = useReducer(reducer, initialState);
 
 const reducer = (state, action) => {
   switch (action.type) {
