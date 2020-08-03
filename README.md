@@ -1,3 +1,7 @@
+# movie_search
+
+Movie search app using React Hooks.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
