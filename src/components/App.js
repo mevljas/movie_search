@@ -12,8 +12,6 @@ const initialState = {
   errorMessage: null,
 };
 
-const [state, dispatch] = useReducer(reducer, initialState);
-
 const reducer = (state, action) => {
   switch (action.type) {
     case "SEARCH_MOVIES_REQUEST":
